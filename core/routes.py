@@ -1,4 +1,4 @@
-from core import api
+from core.application import api
 from flask import jsonify
 from core.utils import getHoroscopeByDay, getHoroscopeByWeek, getHoroscopeByMonth, getChineseHoroscopeByDay, getChineseHoroscopeByWeek, getChineseHoroscopeByMonth
 from flask_restx import Resource, reqparse
