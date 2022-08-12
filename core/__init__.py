@@ -1,11 +1,13 @@
+from email.policy import default
 from flask import Flask
 from decouple import config
 from flask_restx import Api
+from config import ProductionConfig
 
 
 #Flask object made called app
 application = Flask(__name__)
-application.config.from_object(config("APP_SETTINGS"))
+application.config.from_object(config("APP_SETTINGS", default=ProductionConfig))
 
 
 #Api object is made named api
