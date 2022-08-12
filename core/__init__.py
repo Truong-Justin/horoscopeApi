@@ -1,6 +1,5 @@
 from email.policy import default
 from flask import Flask
-from decouple import config
 from flask_restx import Api
 
 
