@@ -5,12 +5,12 @@ from flask_restx import Api
 
 
 #Flask object made called app
-application = Flask(__name__)
+app = Flask(__name__)
 
 
 #Api object is made named api
 api = Api(
-    application,
+    app,
     version='1.0',
     title='Horoscope API',
     description='Get horoscope data using the below APIs',
