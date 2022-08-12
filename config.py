@@ -8,12 +8,4 @@ class Config(object):
     CSRF_ENABLED = True
 
 
-class ProductionConfig(Config):
-    MAIL_DEBUG = False
-
-
-class DevelopmentConfig(Config):
-    DEVELOPMENT = True
-    DEBUG = True
-
 
