@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 #A request is made to the url;
 #the response for horoscope is parsed using Beautiful Soup,
 #and the <p> data is returned within <div class="main-horoscope"></div>
+#from the website being scraped from
 def getHoroscopeByDay(zodiac_sign: int, day: str):
     if not "-" in day:
         res = requests.get(f"https://www.horoscope.com/us/horoscopes/general/horoscope-general-daily-{day}.aspx?sign={zodiac_sign}")
